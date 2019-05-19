@@ -26,7 +26,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   flg2=textarray[textarray.length-1].match(/\p$/) != nil
   
   #text.split.select {|word| word.match(/^[A-Z]+\w+\p/)}
- # binding.pry 
+ binding.pry 
   flg && flg2
 end
 
