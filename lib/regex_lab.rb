@@ -21,7 +21,12 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  text.split.select {|word| word.match(/^[A-Z]+\w+\p/)}
+  textarray=text.split
+  flg=textarray[0].match(/^[A-Z])
+  flg2=textarray[textarray.length-1].match(/\p$/)
+  
+  #text.split.select {|word| word.match(/^[A-Z]+\w+\p/)}
+  flg && flg2
 end
 
 def valid_phone_number?(phone)
